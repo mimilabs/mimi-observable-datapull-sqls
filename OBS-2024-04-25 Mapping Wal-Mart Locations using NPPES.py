@@ -12,6 +12,7 @@ import h3
 
 # COMMAND ----------
 
+# We checked this number from https://npi-db.org
 npi = "1750308979" # Wal-Mart Stores East Lp
 
 # COMMAND ----------
