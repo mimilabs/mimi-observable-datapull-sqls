@@ -1,5 +1,7 @@
 -- Databricks notebook source
 -- This query gets NPs who have multiple practice offices and have other side income from Pharma and Device companies
+-- We didn't publish this result on the Observable platform...
+
 SELECT covered_recipient_npi, SUM(total_amount_of_payment_usdollars) AS tot_amt
 FROM (
   SELECT * FROM mimi_ws_1.openpayments.general

@@ -1,9 +1,19 @@
 -- Databricks notebook source
-
-
--- COMMAND ----------
-
 -- NWSS COVID
+/*
+This SQL script uses the NWSS (national sewer data) from CDC to track/monitor COVID-19 in California. 
+The output data is used in this Observable plot: https://observablehq.com/d/4d810abcceb0c810
+
+Take a look at these Observable script and its description to learn how the data was used and what the extracted data means.
+
+NOTE: Use /explain on the Databricks Assistant view (Toggle Assistant, top-right on the cell) to know more about the script. Also, please read the column/table descriptions of the tables used in the script.
+
+Questions: 
+- What more do you want to see in the data/chart? 
+- How would you improve the query/visualization? 
+- In what situations would you need this type of information?
+*/
+
 SELECT county_names, date_end, AVG(percentile)
 FROM (
   SELECT a.wwtp_id, a.county_names, a.date_end, a.percentile, b.latitude, b.longitude

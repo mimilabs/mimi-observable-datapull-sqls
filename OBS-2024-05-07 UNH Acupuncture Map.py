@@ -1,4 +1,23 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC
+# MAGIC This example is written in Python/Pyspark.
+# MAGIC
+# MAGIC This script uses the Price Transparency Files from Payers, specifically UnitedHealthcare. 
+# MAGIC
+# MAGIC The output data is used in this Observable plot: https://observablehq.com/d/5b6685a6afe5df76
+# MAGIC Take a look at the Observable script and its description to learn how the data was used and what the extracted data means.
+# MAGIC
+# MAGIC Use the Databricks Assistant features to explore the code!
+# MAGIC
+# MAGIC Questions: 
+# MAGIC - What more do you want to see in the data/chart? 
+# MAGIC - How would you improve the query/visualization? 
+# MAGIC - What are the limitations of the query/visualization? Does this represent all acupucture contracts under UNH?
+# MAGIC - In what situations would you need this type of information?
+
+# COMMAND ----------
+
 !pip install h3
 
 # COMMAND ----------

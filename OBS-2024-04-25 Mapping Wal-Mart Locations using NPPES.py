@@ -1,4 +1,23 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC
+# MAGIC This example is written in Python/Pyspark.
+# MAGIC
+# MAGIC This script gathers all Wal-Mart-like records from NPPES and use Census Geocode/H3 libraries to map their locations on the U.S. map. 
+# MAGIC
+# MAGIC The output data is used in this Observable plot: https://observablehq.com/d/31ca127d61a7a8f9
+# MAGIC Take a look at the Observable script and its description to learn how the data was used and what the extracted data means.
+# MAGIC
+# MAGIC Use the Databricks Assistant features to explore the code!
+# MAGIC
+# MAGIC Questions: 
+# MAGIC - What more do you want to see in the data/chart? 
+# MAGIC - How would you improve the query/visualization? 
+# MAGIC - What are the limitations of the query/visualization?
+# MAGIC - In what situations would you need this type of information?
+
+# COMMAND ----------
+
 !pip install h3
 
 # COMMAND ----------

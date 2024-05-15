@@ -1,4 +1,22 @@
 # Databricks notebook source
+# MAGIC %md
+# MAGIC This example is written in Python/Pyspark.
+# MAGIC
+# MAGIC This script gathers all Wal-Mart-like records from NPPES and track the growth of the Wal-Mart Health Centers.
+# MAGIC
+# MAGIC The output data is used in this Observable plot: https://observablehq.com/d/2fab357cc8b91c9c
+# MAGIC Take a look at the Observable script and its description to learn how the data was used and what the extracted data means.
+# MAGIC
+# MAGIC Use the Databricks Assistant features to explore the code!
+# MAGIC
+# MAGIC Questions: 
+# MAGIC - What more do you want to see in the data/chart? 
+# MAGIC - How would you improve the query/visualization? 
+# MAGIC - What are the limitations of the query/visualization?
+# MAGIC - In what situations would you need this type of information?
+
+# COMMAND ----------
+
 from pyspark.sql.functions import col
 import re
 import pandas as pd

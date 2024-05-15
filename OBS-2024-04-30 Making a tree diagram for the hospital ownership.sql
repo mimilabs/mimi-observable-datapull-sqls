@@ -1,4 +1,21 @@
 -- Databricks notebook source
+/*
+This SQL script uses the Hospital Ownership data from Data.CMS.gov to visualize the hospital ownership structure. 
+The output data is used in this Observable plot: https://observablehq.com/d/375225beead5705a
+Take a look at the Observable script and its description to learn how the data was used and what the extracted data means.
+
+NOTE: The Centers for Medicare & Medicaid Services started publishing hospital ownership data for the last couple of years [2]. The data is self-reported. Some folks may not see the data has limited usage, but this is a significant step forward for business transparency, and to be honest, there is a lot to uncover.
+
+One downside of the CMS data site is that the table view of the data was too much to read. The ownerships are better represented in a tree structure, so I leveraged Observable to enhance the readability.
+
+NOTE: Use /explain on the Databricks Assistant view (Toggle Assistant, top-right on the cell) to know more about the script.
+
+Questions: 
+- What more do you want to see in the data/chart? 
+- How would you improve the query/visualization? 
+- In what situations would you need this type of information?
+*/
+
 SELECT DISTINCT CONCAT_WS('^', 
   CONCAT(
     COALESCE(
