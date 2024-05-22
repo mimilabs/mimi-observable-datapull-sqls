@@ -27,7 +27,3 @@ FROM (
     b.longitude IS NOT NULL AND
     a.percentile <= 100) 
 GROUP BY county_names, date_end;
-
--- COMMAND ----------
-
-
